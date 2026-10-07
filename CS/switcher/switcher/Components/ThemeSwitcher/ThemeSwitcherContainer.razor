@@ -4,7 +4,7 @@
 
 @rendermode InteractiveServer
 
-<div class="theme-@ThemesService.ActiveTheme?.Name themeswitcher-container @StateCssClass">
+<div class="@($"theme-{ThemesService.ActiveTheme?.Name?.Replace(" ", "_").Replace("#", "")}") themeswitcher-container @StateCssClass">
     <div class="themeswitcher-content">
         <div class="themeswitcher-title">DevExpress Fluent</div>
         <ul class="themeswitcher-colors">
