@@ -24,6 +24,6 @@
     }
 
     string GetThemeSwitcherCssClass() {
-        return "themeswitcher-button theme-settings " + ThemeSwitcherShown;
+        return "themeswitcher-button theme-settings " + (ThemeSwitcherShown ? "active" : "");
     }
 }
